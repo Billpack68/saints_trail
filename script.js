@@ -55,7 +55,7 @@ const scenes = [
     choices: [{ text: "Begin journey", next: 5 }]
   },
   { // 4 - study church documents
-    text: "You study some old church records. You find that Lord has been preparing the Saints",
+    text: "Study the docs",
     choices: [{ text: "Begin journey", next: 5 }]
   },
   { // 5 - begin journey
