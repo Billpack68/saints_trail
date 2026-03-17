@@ -20,7 +20,8 @@ function showScene(scene) {
     btn.textContent = choice.text;
     btn.onclick = () => {
       Object.assign(state, choice.effect || {});
-      showScene(scenes[choice.next]);
+      state.scene_number = choice.next;
+      showScene(scenes[state.scene_number]);
     };
     choicesEl.appendChild(btn);
   });
