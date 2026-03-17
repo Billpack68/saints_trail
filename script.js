@@ -47,7 +47,18 @@ const scenes = [
   },
   { // 2 - Receive endowment
     text: "You receive your endowment and feel the blessings of the Lord.",
-    choices: [{ text: "Continue", next: 5 }]
+    choices: [{ text: "Begin journey", next: 5 }]
+  },
+  { // 3 - work on temple
+    text: "You work on the temple",
+    choices: [{ text: "Begin journey", next: 5 }]
+  },
+  { // 4 - study church documents
+    text: "Study the docs",
+    choices: [{ text: "Begin journey", next: 5 }]
+  },
+  { // 5 - begin journey
+    text: "You get dysentery. Skill issue."
   }
 ];
 
