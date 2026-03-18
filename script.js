@@ -38,8 +38,8 @@ const scenes = [
     choices: [
       { text: "Listen to Brigham Young", next: 1, effect: { blessings: 10 } },
       { text: "Receive your endowment", next: 2, effect: { blessings: 30 } },
-      { text: "Work on the temple", next: 3 },
-      { text: "Study church documents", next: 4}
+      { text: "Work on the temple", next: 3, effect: { blessings: 15 } },
+      { text: "Study church documents", next: 4, effect: { blessings: 5 } } 
     ]
   },
   { // 1 - Brigham Young's speech
@@ -57,11 +57,11 @@ const scenes = [
   { // 4 - study church documents
 	  text: "You study some old church records. A page Joseph's journal reads:\n\n 'I instructed the 12 to send out a delegation -& investigate the Locations of Californnia & oregon & find a good Location where we can remove after the Temple is completed. -& build a city in a day- and have a government of our own -  in a healthy climate -' \n -  Joseph Smith Papers Journal 20 February 1844",
     choices: [
-	    { text: "Read More", next: 5 },
+	    { text: "Read More", next: 5 , effect: { blessings: 5 } },
 	    { text: "Begin journey", next: 6 }
     ]
   },
-  {
+  {// 5 - read two
 	  text: "You find remarks from Wilford Woodruff regarding a prophesy Joseph Smith shared when they first met:\n \n [Joseph] said 'it is only a little handfull of Priesthood you see here tonight, but this Church will fill North and South America - it will fill the world... it will fill the Rocky Mountains. There will be tens of thousands of Latter-dayy Saints who will be gathered in the Rocky Mountains, and there they will open the door for the establishing of the Gospel among the Lamanites, who will receive the Gospel and their endowments and the blessings of God. This people will go into the Rockey Mountains; they will there build temples to the Most High. They will raise up a posterity there, and the Latter-day Saints who dwell in these mountains will stand in the flesh until the coming of the Son of Man. The Son of Man will come to them while in the Rocky Mountains.' \n - Conference Report 1898 pg 57",
 	  choices: [{text: "Continue Journey", next: 6}]
   },
